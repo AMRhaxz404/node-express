@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User</title>
+  <link rel="stylesheet" type="text/css" href="/assezts/css/style.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+</head>
+<body>
+    <div class="card-header mb-5">
+	<%- include('../components/navbar') %>
+    </div>
+<div class="container">
+    <div class="card mb-5">
+
+            <div class="badan">
+            <div class="judul">
+                        <h2>Add User</h2>
+            </div>
+            </div>
+
+            <form action="/users" method="POST">
+                <div class="input-group">
+                    <label for="">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="text" name="email">
+                </div>
+                <button type="submit">Send</button>
+                <a href="/users">Back</a>
+                </form>
+    </div>
+</div>
+<footer>
+	&copy; 2020 Muhammad Amrin Mukhodas</p>
+</footer>
+
+
+
+
+</body>
+</html>

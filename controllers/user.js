@@ -1,45 +1,44 @@
+const { v4: uuid } = require('uuid')
+
 let users = [
 	{id: 1, name: 'Muhammad', email: 'muhammad@gmail.com'},
-	{id: 2, name: 'amrin', email: 'amrin@gmail.com'}
+	{id: 2, name: 'amrin', email: 'amrin@gmail.com'},
+	{id: 3, name: 'Mukhodas', email: 'mukhodas@gmail.com'}
 ]
 
 module.exports = {
 	index: function(request, response){
-		if(users.length > 0) {
-			response.json({
-				status: true,
-				method: request.method,
-				url: request.url
-			})
-		} else {
-			response.json({
-				status: false,
-				message: 'Data User Masih Kosong !'
-			})
-		}
-		
+		response.render('pages/user/index', {users})
+		},
+		// show: function(request, response){
+		// 	const id = request.params.id
+		// 	const data = users.filter(user => {
+		// 		return user.id == id
+		// 	})
+		// },
+		create: function(request, response){
+			response.render('pages/user/create')
 		},
 		store: function(request, response){
-		users.push(request.body)
-		response.send({
-			status: true,
-			data: users,
-			message: 'Data User Berhasil Di Simpan !',
-			method: request.method,
-			url: request.url
-		})
-	},
-	update: function(request, response){
-		const id = request.params.id
-		users.filter(user => {
-			if(user.id == id) {
-				user.id = id
-				user.name = request.body.name
-				user.email = request.body.email
+			users.push({
+				id: uuidv4,
+				name: request.body.name,
+				email: request.body.email
+			})
 
-				return user
-			}
-		})
+			response.send(users)
+		},
+		update: function(request, response){
+			const id = request.params.id
+			users.filter(user => {
+				if(user.id == id) {
+					user.id = id
+					user.name = request.body.name
+					user.email = request.body.email
+
+					return user
+				}
+			})
 
 		response.json({
 			status: true,

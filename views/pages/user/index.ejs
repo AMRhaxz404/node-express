@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User</title>
+  <link rel="stylesheet" type="text/css" href="aaassets/css/style.css">
+</head>
+<body>
+	<%- include('../components/navbar') %>
+
+  <div class="badan">
+  <div class="judul">
+      <a href="/users/create">REGISTER</a>
+  			<h2>Daftar User</h2>
+  </div>
+  </div>
+  <ul>
+      <% if(users.length > 0) { %>
+        <% users.forEach(function(user) { %>
+            <li><%=user.name.toUpperCase(   ) %></li>
+        <% }) %>
+      <% } else { %>
+        <li>Data User Kosong</li>
+      <% } %>
+  </ul>
+<footer>
+	&copy; 2020 Muhammad Amrin Mukhodas</p>
+</footer>
+
+
+
+
+</body>
+</html>
