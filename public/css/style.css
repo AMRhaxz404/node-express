@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: century gothic;
+}
+header{
+	  padding: 60px;
+	  text-align: center;
+	  background: black;
+	  color: white;
+	  font-size: 30px;
+	  position: fixed;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+}
+
+ul{
+	margin-right: 70px;
+	font-size: 18px;
+	list-style-type: none;
+	float: right;
+	margin-top: 50px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+}
+ul li a:hover{
+	background-color: 	#FF7F00;
+	color: black;
+}
+ul li a.active{
+	background-color: #FF7F00;
+	color: black;
+}
+
+.main{
+	padding-top: -30px;
+	background-color: #FF8C00;
+	height: 50px;
+	margin-left: -100px;
+	margin-right: -100px;
+	margin-top: -50px;
+}
+.main h3{
+	text-align: left;
+	margin-left: 70px;
+	margin-top: -30px;
+	margin-bottom: -20px;
+	color: 	#fff;
+	font-family: sans-serif;
+}
+.main h3:hover{
+	color: #2F4F4F;
+}
+
+.title{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title h1{
+	color: white;
+	font-size: 66px;
+	text-decoration: underline;
+}
+
+
+button{
+	margin: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: black;
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-right: 4%;
+}
+button:hover{
+	background-color: white;
+	color: black;
+}
+.btn{
+	border: 1px solid white;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	transition: 0,6s
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+
+.container{
+	position: absolute;
+	left: 5%;
+	top: 35%;
+	width: 90%;
+	margin: auto;
+}
+.card{
+	background: transparent;
+	padding: 20px;
+	height: auto;
+}
+.card-title{
+	border: 1px solid white;
+	float: right;
+	text-decoration: none;
+	color: white;
+}
+.card-title a{
+	float: right;
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+}
+.card-title a:hover{
+	background-color: white;
+	color: black;
+}
+table{
+	width: 100%;
+	text-align: center;
+}
+td .table-body{
+	margin: 10px;
+}
+
+thead{
+	background: #494747;
+	color: #ffffff;
+}
+table a{
+	margin-left: 10px;
+	text-decoration: none;
+	color: #000000;
+}
+
+table a:hover{
+	text-decoration: underline;
+	color: #c70039;
+}
+
+.input-control{
+	width: 95%;
+	height: 25px;
+}
+.form-control{
+	width: 100%;
+	margin:10px;
+}
+.form-control .label{
+	width: 100%;
+}
+.label{
+	margin-right: 70px; 
+	color: white;
+}
+
+body{
+	color: white;
+}
+
+
+/*area sidebar*/
+
+.badan{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)), url(https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-color: center;
+	margin-top: 160px;
+}
+.badan .sidebar{
+	background-color: #FF7F00;
+	margin-left: 20px;
+	height: 100%;
+	width: 300px;
+	float: right;
+	
+}
+.badan .sidebar h1{
+	text-align: center;
+	margin-top: 50%;
+}
+
+/*content*/
+
+.badan .judul{
+	font-family: monospace;
+	color: 	#FF7F00;
+	font-size: 20px;
+	margin-left: 40px;
+	padding-top: 50px;
+	text-align: center;
+}
+.badan .judul p{
+	text-align: justify;
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-right: 20px;
+}
+.badan .judul img{
+	width: 300px;
+	height: 200px;
+	float: left;
+	margin-right: 20px;
+}
+.badan .judul h5{
+	text-align: left;
+}
+.badan .judul a img{
+	width: 200px
+	height: 200px;
+}
+.badan .judul form{
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	float: left;
+	width: 100px;
+}
+.badan .judul a{
+	float: left;
+	text-decoration: none;
+	color: #FF7F00;
+	border: 2px;
+	background-color: lightblue;
+	border-radius: 5px;
+	font-size: 20px;
+
+}
+
+/*area footer*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #2F4F4F;
+  color: white;
+}
+
+
+/*area icon sosial media*/
+.icon{
+	width: 0;
+}
+.icon img{
+	width: 200px;
+	height: 200px;
+}
+
+
+
