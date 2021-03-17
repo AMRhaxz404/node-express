@@ -2,28 +2,32 @@
 <html>
 <head>
   <title>User</title>
-  <link rel="stylesheet" type="text/css" href="aaassets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/assezts/css/style.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
 </head>
 <body>
+    <div class="card-header mb-5">
 	<%- include('../components/navbar') %>
-
-  <div class="badan">
-  <div class="judul">
-      <a href="/users/create">REGISTER</a>
-  			<h2>Daftar User</h2>
-  </div>
-  </div>
-  <ul>
-      <% if(users.length > 0) { %>
-        <% users.forEach(function(user) { %>
-            <li><%=user.name.toUpperCase(   ) %></li>
-        <% }) %>
-      <% } else { %>
-        <li>Data User Kosong</li>
-      <% } %>
-  </ul>
+    </div>
+<div class="container">
+    <div class="card mb-5">
+  <h2>Daftar User</h2>
+      <ul>
+        <% if(users.length > 0) { %>
+          <% users.forEach(function(user) { %>
+              <li><a href="/users/<%=user.id %>">
+              <%=user.name.toUpperCase(   ) %></a>
+              </li>
+          <% }) %>
+        <% } else { %>
+          <li>Data User Kosong</li>
+        <% } %>
+    </ul>
+    <a href="/users/create">REGISTER</a>
+    </div>
+</div>
 <footer>
-	&copy; 2020 Muhammad Amrin Mukhodas</p>
+  <%- include('../components/footer') %>
 </footer>
 
 

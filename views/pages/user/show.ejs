@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User</title>
+  <link rel="stylesheet" type="text/css" href="/assezts/css/style.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+</head>
+<body>
+    <div class="card-header mb-5">
+	<%- include('../components/navbar') %>
+    </div>
+<div class="container">
+    <div class="card mb-5">
+        <h2>Detail User</h2>
+        <ul>
+            <li>Nama: <strong><%=user[0].name %></strong></li>
+            <li>Email: <strong><%=user[0].email %></strong></li>
+        </ul>
+        <a href="/users">Kembali</a>
+    </div>
+</div>
+<footer>
+    <%- include('../components/footer') %>
+</footer>
+
+
+
+
+</body>
+</html>
