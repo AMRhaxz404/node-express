@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>User</title>
-  <link rel="stylesheet" type="text/css" href="/assezts/css/style.css">
   <link rel="stylesheet" href="/assets/css/bootstrap.css">
 </head>
 <body>
@@ -12,10 +11,14 @@
 <div class="container">
     <div class="card mb-5">
   <h2>Daftar User</h2>
+  <form action="/users">
+    <input type="text" name="keyword">
+    <button type="submit">Cari</button>
+  </form>
       <ul>
         <% if(users.length > 0) { %>
           <% users.forEach(function(user) { %>
-              <li><a href="/users/<%=user.id %>">
+              <li><a href="/users/<%=user._id %>">
               <%=user.name.toUpperCase(   ) %></a>
               </li>
           <% }) %>

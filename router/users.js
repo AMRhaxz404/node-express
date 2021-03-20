@@ -11,5 +11,6 @@ router.get('/users/create', usercontroller.create)
 router.get('/users/:id', usercontroller.show)
 router.put('/users/:id', usercontroller.update)
 router.delete('/users/:userId', usercontroller.delete)
+router.get('/users/:id/edit', usercontroller.edit)
 
 module.exports = router

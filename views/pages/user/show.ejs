@@ -13,10 +13,12 @@
     <div class="card mb-5">
         <h2>Detail User</h2>
         <ul>
-            <li>Nama: <strong><%=user[0].name %></strong></li>
-            <li>Email: <strong><%=user[0].email %></strong></li>
+            <li>Nama: <strong><%=user.name %></strong></li>
+            <li>Email: <strong><%=user.email %></strong></li>
         </ul>
         <a href="/users">Kembali</a>
+        <a href="/users/<%=user._id %>/edit">Edit</a>
+        <a href="/users">Delete</a>
     </div>
 </div>
 <footer>
